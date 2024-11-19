@@ -1,0 +1,616 @@
+/* шрифты */
+@font-face {
+    font-family: "Strogiy_Demo";
+    font-weight: normal;
+    src: url("../fonts/Strogiy_Demo/StrogiyDemo-A-Black.otf");
+}
+@font-face {
+    font-family: "Wix_Madefor_Display_Bold";
+    font-weight: normal;
+    src: url("../fonts/Wix_Madefor_Display/static/WixMadeforDisplay-Bold.ttf");
+}
+@font-face {
+    font-family: "Wix_Madefor_Display_Medium";
+    font-weight: normal;
+    src: url("../fonts/Wix_Madefor_Display/static/WixMadeforDisplay-Medium.ttf");
+}
+@font-face {
+    font-family: "Wix_Madefor_Display_Regular";
+    font-weight: normal;
+    src: url("../fonts/Wix_Madefor_Display/static/WixMadeforDisplay-Regular.ttf");
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 20px Wix_Madefor_Display_Regular;
+    color: white;
+    background-color: black;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4 {
+    font: 40px Wix_Madefor_Display_Bold;
+}
+h2 {
+    font-size: 40px;
+}
+/*
+/*
+/*
+/* навигация */
+.bk-imge {
+    background-image: url("../img/bk-img.jpg");
+    background-size: cover;
+    color: white;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    height: 700px;
+}
+.nav-site {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    padding: 25px 0 25px 0;
+    margin: 0 10% 0 10%;
+    backdrop-filter: blur(35px);
+    font: 22px Wix_Madefor_Display_Medium;
+    border-radius: 100px;
+}
+.logo { /* Логотип */
+    content: url(../img/logo.svg);
+    margin-right: 20%;
+    margin-left: 5%;
+    width: 100px;
+}
+.navigation-site {
+    display: flex;
+    gap: 10%;
+}
+.item-navigation {
+    width: max-content;
+}
+/*
+/*
+/*
+/* главная */
+.main-page {
+    margin-left: 10%;
+}
+h1 {
+    margin: 6% 0 5% 0;
+    font: 49px  Wix_Madefor_Display_Bold;
+    width: 35%;
+}
+.text-main-page {
+    font: 24px  Wix_Madefor_Display_Medium;
+    width: 45%;
+}
+/*
+/*
+/*
+/* о нас */
+.about-company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 6%;
+}
+.about-us {
+    width: 35%;
+}
+/* инфографика */
+.infographics-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.infographics-item {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    width: 560px;
+    height: 175px;
+    background-image: url('../img/star.svg');
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: right -65px bottom -35px;
+}
+.infographics-img {
+    padding: 20px;
+}
+.text-infographics {
+    width: 300px;
+    height: 120px;
+    font: 24px Strogiy_Demo;
+}
+.infographics-item {
+    background-color: #2B59CE;
+}
+/* блок о нас */
+.about-us {
+    background-image: url(../img/bk-img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    border-radius: 20px;
+    width: 560px;
+    height: 580px;
+}
+.about-us h2 {
+    text-align: center;
+}
+.text-about-us {
+    font-size: 19px;
+    padding: 35px;
+    text-align: justify;
+    
+}
+/*
+/*
+/*
+/* порфтолио */
+.portfolio-block {
+    margin-top: 50px;
+}
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+}
+.div-portfolio {
+    width: 48%;
+    max-width: 900px;
+    height: 50vh;
+    border: 1px solid white;
+}
+.h-portfolio {
+    text-align: center;
+}
+.portfolio-block h2 {
+    text-align: center;
+}
+/* фон блоков */
+.one-portfolio, .two-portfolio, .three-portfolio, .four-portfolio {
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.one-portfolio {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.5)), url(../img/port1.png);
+}
+.two-portfolio {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.5)), url(../img/port2.png);
+}
+.three-portfolio {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.5)), url(../img/port4.png);
+}
+.four-portfolio {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.5)), url(../img/port3.png);
+}
+/* закругление блоков */
+.left-top-portfolio {
+    border-radius: 0 20px 90px 0;
+}
+.left-bot-portfolio {
+    border-radius: 0 90px 20px 0;
+}
+.right-top-portfolio {
+    border-radius: 20px 0 0 90px;
+}
+.right-bot-portfolio {
+    border-radius: 90px 0 0 20px;
+}
+/*
+/*
+/*
+/* услуги */
+.services {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 5%;
+}
+.services ul {
+    display: flex;
+    gap: 53px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+.card {
+    width: 370px;
+    height: 420px;
+    background-color: #2B59CE; 
+    border-radius: 20px;
+    color: #FFF;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card h3 {
+    font-size: 28px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.text-service {
+    font: 22px Wix_Madefor_Display_Medium;
+    margin: 0;
+    padding-bottom: 30px;
+    width: 100%;
+    position: relative;
+}
+
+.text-service:first-of-type {/* Линия после первого подзаголовка */
+    padding-bottom: 30px;
+    position: relative;
+}
+.text-service:first-of-type::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: #FFF;
+}
+.text-service:last-of-type {
+    padding-top: 30px;
+}
+/*
+/*
+/*
+/* отзывы клиентов */
+.review-block {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+.review-block h2 {
+    margin-bottom: 20px;
+}
+.review {
+    width: 530px;
+    height: 380px; 
+    background-color: #fff;
+    color: #000;
+    padding: 25px;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: left;
+    margin: 10px 40px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.review div {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.review img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.client-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.name {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+.company {
+    color: #87b0ff;
+    font-size: 16px;
+    margin: 5px 0 0 0;
+}
+.text-review {
+    font: 22px Wix_Madefor_Display_Medium;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews-content {
+    display: flex;
+    gap: 5%; /* Расстояние между отзывами */
+}
+/*
+/*
+/*
+/* контакты */
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.our-contacts, .forma-request {
+    background-color: #2B59CE; 
+    width: 49%;
+    max-width: 900px;
+    height: 70vh;
+}
+.our-contacts {
+    background-image: url('../img/bigstar.svg');
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: left -75% bottom -150px;
+    border-top-right-radius: 20px;
+}
+.forma-request {
+    border-top-left-radius: 20px;
+}
+/* контактная информация */
+.contacts-item {
+    padding: 4.5vh 45px 45px 45px;
+    font: 20px Wix_Madefor_Display_Bold;
+}
+.icons { /* иконки */
+    padding-left: 45px;
+    display: flex;
+    gap: 25px;
+}
+.icon-vk {
+    content: url(../img/vk.svg);
+}
+.icon-inst {
+    content: url(../img/insta.svg);
+}
+.icon-fb {
+    content: url(../img/facebook.svg);
+}
+/* форма */
+.form-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.input-name, .input-number {
+    outline: none;
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 45px;
+    border: 4px solid #CECECE;
+    font-size: 20px;
+    background: #2B59CE;
+    color: #CECECE;
+    padding: 15px;
+}
+.input-name:focus, 
+.input-number:focus {
+  border-color: #fff;
+    color: white;
+}
+.input-name::placeholder, 
+.input-number::placeholder {
+  color: #CECECE; 
+}
+.text-form {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 55%;
+}
+.form-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.forma-request h3, .forma-request form {
+    padding-left: 60px;
+}
+/*
+/*
+/*
+/* подвал */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+}
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-logo { /* Логотип */
+    content: url(../img/footer-logo.svg);
+    margin-right: 20%;
+    margin-left: 5%;
+    width: 100px;
+}
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+.footer-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.footer-nav ul li a:hover {
+    text-decoration: underline;
+}
+.footer-contacts {
+    font-size: 14px;
+    text-align: right;
+}
+.footer-contacts p {
+    margin: 5px 0;
+}
+/*
+/*
+/*
+/* Модальное окноn*/
+.modal-overlay {
+    display: none; /* изачально скрыто */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    
+}
+.modal-content {
+    background-image: url('../img/bigstar.svg');
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: right -50% bottom -140px;
+    border: 5px solid white;
+    background-color: #2B59CE;
+    padding: 40px;
+    width: 60vh;
+    height: 75vh;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.modal-form h3 {
+    margin-bottom: 100px;
+}
+.modal-input-name, .modal-input-number {
+    outline: none;
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 45px;
+    border: 4px solid #CECECE;
+    font-size: 20px;
+    background: #2B59CE;
+    color: #CECECE;
+    padding: 15px;
+}
+.modal-input-name:focus, 
+.modal-input-number:focus {
+  border-color: #fff;
+    color: white;
+}
+.modal-input-name::placeholder, 
+.modal-input-number::placeholder {
+  color: #CECECE; 
+}
+.modal-text-form {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn-modal {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/*
+/*
+/*
+/* все кнопки */
+.btn-gl-bid {
+    font: 25px  Wix_Madefor_Display_Bold;
+    border: 4px solid;
+    border-radius: 45px;
+    padding: 20px 35px 20px 35px;
+}
+.div-btn-gl-bid {
+    margin-top: 7%;
+}
+
+.btn-request { /* кнопка для услуг */
+    margin-top: auto;
+    padding: 10px 20px;
+    border: 4px solid #ffffff;
+    border-radius: 45px;
+    background: none;
+    color: #ffffff;
+    font: 18px Wix_Madefor_Display_Bold;
+    cursor: pointer;
+    transition: 0.3s;
+    align-self: center;
+    width: 280px;
+  }
+.btn-request:hover {
+    background-color: #FFF;
+    color: #2B59CE;
+}
+
+.all-reviews-btn { /* кнопка для отзывов */
+    background-color: transparent;
+    border: 4px solid #fff;
+    padding: 15px 40px;
+    border-radius: 45px;
+    font: 18px Wix_Madefor_Display_Bold;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 40px;
+    display: inline-block;
+}
+  
+.all-reviews-btn:hover {
+    background-color: #ffffff;
+    color: #2B59CE;
+}
+.modal-close-btn {/* Кнопка для закрытия модального окна */
+    content: url(../img/close.svg);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.btn-form { /* кнопка для формы */
+    padding: 15px 25px;
+    border: 4px solid #ffffff;
+    border-radius: 45px;
+    background: none;
+    color: #ffffff;
+    font: 24px Wix_Madefor_Display_Bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 330px;
+    margin-top: 40px;
+  }
+.btn-form:hover {
+    background-color: #FFF;
+    color: #2B59CE;
+}
